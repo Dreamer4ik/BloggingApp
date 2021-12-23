@@ -17,7 +17,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         // Update vc to register if not log in
-        let vc = TabBarViewController()
+        let vc: UIViewController
+        if AuthManager.shared.isSignedIn {
+            vc = TabBarViewController()
+        }
+        else {
+            let signInVc = LoginViewController()
+            signInVc.navigationItem.largeTitleDisplayMode = .always
+            let navVc = UINavigationController(rootViewController: signInVc)
+            navVc.navigationBar.prefersLargeTitles = true
+            vc = navVc
+        }
         window.rootViewController = vc
         window.makeKeyAndVisible()
         self.window = window

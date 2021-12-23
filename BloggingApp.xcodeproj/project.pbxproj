@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B33C6EF36E38A35AEDE15B89 /* Pods_BloggingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0561F2B09DDD75BA7B71F6 /* Pods_BloggingApp.framework */; };
+		DF02082B2774D15400A17D0C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF02082A2774D15400A17D0C /* User.swift */; };
+		DF02082D2774D16A00A17D0C /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF02082C2774D16A00A17D0C /* BlogPost.swift */; };
 		DF6668922773342E00B70EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668912773342E00B70EAB /* AppDelegate.swift */; };
 		DF6668942773342E00B70EAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668932773342E00B70EAB /* SceneDelegate.swift */; };
 		DF6668962773342E00B70EAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668952773342E00B70EAB /* HomeViewController.swift */; };
@@ -23,12 +25,15 @@
 		DF6668BC27733D1C00B70EAB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BB27733D1C00B70EAB /* DatabaseManager.swift */; };
 		DF6668BE27733D3300B70EAB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BD27733D3300B70EAB /* AuthManager.swift */; };
 		DF6668C027733D4A00B70EAB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BF27733D4A00B70EAB /* StorageManager.swift */; };
+		DF82DBB92774985000D78AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF82DBB82774985000D78AEE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A39D1EC2A61A2166F66D678 /* Pods-BloggingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloggingApp.debug.xcconfig"; path = "Target Support Files/Pods-BloggingApp/Pods-BloggingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9C389C589BA121D5E10932A3 /* Pods-BloggingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloggingApp.release.xcconfig"; path = "Target Support Files/Pods-BloggingApp/Pods-BloggingApp.release.xcconfig"; sourceTree = "<group>"; };
 		CE0561F2B09DDD75BA7B71F6 /* Pods_BloggingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloggingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF02082A2774D15400A17D0C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF02082C2774D16A00A17D0C /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		DF66688E2773342E00B70EAB /* BloggingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloggingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6668912773342E00B70EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6668932773342E00B70EAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		DF6668BB27733D1C00B70EAB /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		DF6668BD27733D3300B70EAB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		DF6668BF27733D4A00B70EAB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		DF82DBB82774985000D78AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,6 @@
 				3A39D1EC2A61A2166F66D678 /* Pods-BloggingApp.debug.xcconfig */,
 				9C389C589BA121D5E10932A3 /* Pods-BloggingApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +109,8 @@
 		DF6668A5277339D100B70EAB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DF02082A2774D15400A17D0C /* User.swift */,
+				DF02082C2774D16A00A17D0C /* BlogPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				DF66689A2773342E00B70EAB /* Assets.xcassets */,
+				DF82DBB82774985000D78AEE /* GoogleService-Info.plist */,
 				DF6668912773342E00B70EAB /* AppDelegate.swift */,
 				DF6668932773342E00B70EAB /* SceneDelegate.swift */,
 			);
@@ -245,6 +253,7 @@
 			files = (
 				DF66689E2773342E00B70EAB /* LaunchScreen.storyboard in Resources */,
 				DF66689B2773342E00B70EAB /* Assets.xcassets in Resources */,
+				DF82DBB92774985000D78AEE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF02082D2774D16A00A17D0C /* BlogPost.swift in Sources */,
 				DF6668AF27733BA700B70EAB /* LoginViewController.swift in Sources */,
 				DF6668BA27733CF600B70EAB /* IAPManager.swift in Sources */,
 				DF6668C027733D4A00B70EAB /* StorageManager.swift in Sources */,
 				DF6668BE27733D3300B70EAB /* AuthManager.swift in Sources */,
 				DF6668962773342E00B70EAB /* HomeViewController.swift in Sources */,
 				DF6668B127733BB100B70EAB /* RegisterViewController.swift in Sources */,
+				DF02082B2774D15400A17D0C /* User.swift in Sources */,
 				DF6668922773342E00B70EAB /* AppDelegate.swift in Sources */,
 				DF6668B627733C3C00B70EAB /* ViewPostViewController.swift in Sources */,
 				DF6668AB27733AC000B70EAB /* ProfileViewController.swift in Sources */,

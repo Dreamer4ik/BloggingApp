@@ -5,6 +5,7 @@
 //  Created by Ivan Potapenko on 22.12.2021.
 //
 
+import Firebase
 import UIKit
 
 @main
@@ -13,10 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
         //Increase launch time launch screen
         Thread.sleep(forTimeInterval: 1)
+        
+        FirebaseApp.configure()
         return true
     }
 
