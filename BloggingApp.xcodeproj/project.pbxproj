@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33C6EF36E38A35AEDE15B89 /* Pods_BloggingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0561F2B09DDD75BA7B71F6 /* Pods_BloggingApp.framework */; };
 		DF6668922773342E00B70EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668912773342E00B70EAB /* AppDelegate.swift */; };
 		DF6668942773342E00B70EAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668932773342E00B70EAB /* SceneDelegate.swift */; };
-		DF6668962773342E00B70EAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668952773342E00B70EAB /* ViewController.swift */; };
-		DF6668992773342E00B70EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6668972773342E00B70EAB /* Main.storyboard */; };
+		DF6668962773342E00B70EAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668952773342E00B70EAB /* HomeViewController.swift */; };
 		DF66689B2773342E00B70EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF66689A2773342E00B70EAB /* Assets.xcassets */; };
 		DF66689E2773342E00B70EAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF66689C2773342E00B70EAB /* LaunchScreen.storyboard */; };
+		DF6668AB27733AC000B70EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668AA27733AC000B70EAB /* ProfileViewController.swift */; };
+		DF6668AD27733B4500B70EAB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668AC27733B4500B70EAB /* TabBarViewController.swift */; };
+		DF6668AF27733BA700B70EAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668AE27733BA700B70EAB /* LoginViewController.swift */; };
+		DF6668B127733BB100B70EAB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668B027733BB100B70EAB /* RegisterViewController.swift */; };
+		DF6668B627733C3C00B70EAB /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668B527733C3C00B70EAB /* ViewPostViewController.swift */; };
+		DF6668B827733C5F00B70EAB /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668B727733C5F00B70EAB /* CreateNewPostViewController.swift */; };
+		DF6668BA27733CF600B70EAB /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668B927733CF600B70EAB /* IAPManager.swift */; };
+		DF6668BC27733D1C00B70EAB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BB27733D1C00B70EAB /* DatabaseManager.swift */; };
+		DF6668BE27733D3300B70EAB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BD27733D3300B70EAB /* AuthManager.swift */; };
+		DF6668C027733D4A00B70EAB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BF27733D4A00B70EAB /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A39D1EC2A61A2166F66D678 /* Pods-BloggingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloggingApp.debug.xcconfig"; path = "Target Support Files/Pods-BloggingApp/Pods-BloggingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9C389C589BA121D5E10932A3 /* Pods-BloggingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloggingApp.release.xcconfig"; path = "Target Support Files/Pods-BloggingApp/Pods-BloggingApp.release.xcconfig"; sourceTree = "<group>"; };
+		CE0561F2B09DDD75BA7B71F6 /* Pods_BloggingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloggingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF66688E2773342E00B70EAB /* BloggingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloggingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6668912773342E00B70EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6668932773342E00B70EAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF6668952773342E00B70EAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF6668982773342E00B70EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF6668952773342E00B70EAB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DF66689A2773342E00B70EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF66689D2773342E00B70EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF66689F2773342E00B70EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6668AA27733AC000B70EAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DF6668AC27733B4500B70EAB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DF6668AE27733BA700B70EAB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF6668B027733BB100B70EAB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DF6668B527733C3C00B70EAB /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
+		DF6668B727733C5F00B70EAB /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
+		DF6668B927733CF600B70EAB /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		DF6668BB27733D1C00B70EAB /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		DF6668BD27733D3300B70EAB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		DF6668BF27733D4A00B70EAB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33C6EF36E38A35AEDE15B89 /* Pods_BloggingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A37E47114D2AC41C23240A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A39D1EC2A61A2166F66D678 /* Pods-BloggingApp.debug.xcconfig */,
+				9C389C589BA121D5E10932A3 /* Pods-BloggingApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DF6668852773342E00B70EAB = {
 			isa = PBXGroup;
 			children = (
 				DF6668902773342E00B70EAB /* BloggingApp */,
 				DF66688F2773342E00B70EAB /* Products */,
+				17A37E47114D2AC41C23240A /* Pods */,
+				F73C0093EDD41F262859922B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +91,96 @@
 		DF6668902773342E00B70EAB /* BloggingApp */ = {
 			isa = PBXGroup;
 			children = (
-				DF6668912773342E00B70EAB /* AppDelegate.swift */,
-				DF6668932773342E00B70EAB /* SceneDelegate.swift */,
-				DF6668952773342E00B70EAB /* ViewController.swift */,
-				DF6668972773342E00B70EAB /* Main.storyboard */,
-				DF66689A2773342E00B70EAB /* Assets.xcassets */,
-				DF66689C2773342E00B70EAB /* LaunchScreen.storyboard */,
+				DF6668A927733A1100B70EAB /* Managers */,
+				DF6668A827733A0100B70EAB /* Other */,
+				DF6668A7277339EB00B70EAB /* Controllers */,
+				DF6668A6277339DD00B70EAB /* Views */,
+				DF6668A5277339D100B70EAB /* Models */,
 				DF66689F2773342E00B70EAB /* Info.plist */,
 			);
 			path = BloggingApp;
+			sourceTree = "<group>";
+		};
+		DF6668A5277339D100B70EAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF6668A6277339DD00B70EAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF66689C2773342E00B70EAB /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF6668A7277339EB00B70EAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF6668C1277342F100B70EAB /* Core Tabs */,
+				DF6668B427733C0200B70EAB /* Login */,
+				DF6668C22773432700B70EAB /* Posts */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF6668A827733A0100B70EAB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DF66689A2773342E00B70EAB /* Assets.xcassets */,
+				DF6668912773342E00B70EAB /* AppDelegate.swift */,
+				DF6668932773342E00B70EAB /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DF6668A927733A1100B70EAB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DF6668B927733CF600B70EAB /* IAPManager.swift */,
+				DF6668BB27733D1C00B70EAB /* DatabaseManager.swift */,
+				DF6668BD27733D3300B70EAB /* AuthManager.swift */,
+				DF6668BF27733D4A00B70EAB /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DF6668B427733C0200B70EAB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DF6668AE27733BA700B70EAB /* LoginViewController.swift */,
+				DF6668B027733BB100B70EAB /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DF6668C1277342F100B70EAB /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				DF6668952773342E00B70EAB /* HomeViewController.swift */,
+				DF6668AA27733AC000B70EAB /* ProfileViewController.swift */,
+				DF6668AC27733B4500B70EAB /* TabBarViewController.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		DF6668C22773432700B70EAB /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				DF6668B727733C5F00B70EAB /* CreateNewPostViewController.swift */,
+				DF6668B527733C3C00B70EAB /* ViewPostViewController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		F73C0093EDD41F262859922B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0561F2B09DDD75BA7B71F6 /* Pods_BloggingApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF6668A22773342E00B70EAB /* Build configuration list for PBXNativeTarget "BloggingApp" */;
 			buildPhases = (
+				449B1DD7182B8AAA55F6D582 /* [CP] Check Pods Manifest.lock */,
 				DF66688A2773342E00B70EAB /* Sources */,
 				DF66688B2773342E00B70EAB /* Frameworks */,
 				DF66688C2773342E00B70EAB /* Resources */,
+				F931CCB646F4397BA89D5666 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +245,77 @@
 			files = (
 				DF66689E2773342E00B70EAB /* LaunchScreen.storyboard in Resources */,
 				DF66689B2773342E00B70EAB /* Assets.xcassets in Resources */,
-				DF6668992773342E00B70EAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		449B1DD7182B8AAA55F6D582 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BloggingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F931CCB646F4397BA89D5666 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloggingApp/Pods-BloggingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloggingApp/Pods-BloggingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BloggingApp/Pods-BloggingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF66688A2773342E00B70EAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6668962773342E00B70EAB /* ViewController.swift in Sources */,
+				DF6668AF27733BA700B70EAB /* LoginViewController.swift in Sources */,
+				DF6668BA27733CF600B70EAB /* IAPManager.swift in Sources */,
+				DF6668C027733D4A00B70EAB /* StorageManager.swift in Sources */,
+				DF6668BE27733D3300B70EAB /* AuthManager.swift in Sources */,
+				DF6668962773342E00B70EAB /* HomeViewController.swift in Sources */,
+				DF6668B127733BB100B70EAB /* RegisterViewController.swift in Sources */,
 				DF6668922773342E00B70EAB /* AppDelegate.swift in Sources */,
+				DF6668B627733C3C00B70EAB /* ViewPostViewController.swift in Sources */,
+				DF6668AB27733AC000B70EAB /* ProfileViewController.swift in Sources */,
+				DF6668BC27733D1C00B70EAB /* DatabaseManager.swift in Sources */,
+				DF6668AD27733B4500B70EAB /* TabBarViewController.swift in Sources */,
 				DF6668942773342E00B70EAB /* SceneDelegate.swift in Sources */,
+				DF6668B827733C5F00B70EAB /* CreateNewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF6668972773342E00B70EAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF6668982773342E00B70EAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF66689C2773342E00B70EAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +445,7 @@
 		};
 		DF6668A32773342E00B70EAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A39D1EC2A61A2166F66D678 /* Pods-BloggingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,9 +456,10 @@
 				INFOPLIST_FILE = BloggingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +469,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DF6668A42773342E00B70EAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C389C589BA121D5E10932A3 /* Pods-BloggingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,9 +486,10 @@
 				INFOPLIST_FILE = BloggingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
