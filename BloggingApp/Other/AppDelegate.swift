@@ -5,6 +5,7 @@
 //  Created by Ivan Potapenko on 22.12.2021.
 //
 
+import Purchases
 import Firebase
 import UIKit
 
@@ -18,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Thread.sleep(forTimeInterval: 1)
         
         FirebaseApp.configure()
+        //Public key RevenueCat
+        Purchases.configure(withAPIKey: "appl_DMtCCOAuAHhpEHtoSXSzLcxakPw")
+        
+        IAPManager.shared.getSubscriptionStatuts(completion: nil)
         return true
     }
 
