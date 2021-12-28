@@ -13,6 +13,13 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         title = "Log In"
         view.backgroundColor = .systemBackground
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            if !IAPManager.shared.isPremium() {
+                let vc = PayWallViewController()
+                let navVc = UINavigationController(rootViewController: vc)
+                self.present(navVc, animated: true, completion: nil)
+            }
+        }
     }
     
 

@@ -1,0 +1,49 @@
+{
+  "identifier" : "3FE12B29",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "2A17BF01",
+      "localizations" : [
+
+      ],
+      "name" : "BloggPremium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "535CD371",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock all Bloggs posts",
+              "displayName" : "Premium Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.temporary.id",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Premium.monthly",
+          "subscriptionGroupID" : "2A17BF01",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

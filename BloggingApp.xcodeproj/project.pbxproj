@@ -25,7 +25,11 @@
 		DF6668BC27733D1C00B70EAB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BB27733D1C00B70EAB /* DatabaseManager.swift */; };
 		DF6668BE27733D3300B70EAB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BD27733D3300B70EAB /* AuthManager.swift */; };
 		DF6668C027733D4A00B70EAB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6668BF27733D4A00B70EAB /* StorageManager.swift */; };
+		DF696C532776205D00ED70B6 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF696C522776205D00ED70B6 /* PayWallViewController.swift */; };
+		DF6DDB322777309800653809 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6DDB312777309800653809 /* PayWallDescriptionView.swift */; };
 		DF82DBB92774985000D78AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF82DBB82774985000D78AEE /* GoogleService-Info.plist */; };
+		DF93BA19277639CB0024D769 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93BA18277639CB0024D769 /* PayWallHeaderView.swift */; };
+		DF93BA1B27763B1C0024D769 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93BA1A27763B1C0024D769 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +55,12 @@
 		DF6668BB27733D1C00B70EAB /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		DF6668BD27733D3300B70EAB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		DF6668BF27733D4A00B70EAB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		DF696C522776205D00ED70B6 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		DF696C542776246300ED70B6 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		DF6DDB312777309800653809 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		DF82DBB82774985000D78AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF93BA18277639CB0024D769 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		DF93BA1A27763B1C0024D769 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				DF66689C2773342E00B70EAB /* LaunchScreen.storyboard */,
+				DF93BA18277639CB0024D769 /* PayWallHeaderView.swift */,
+				DF6DDB312777309800653809 /* PayWallDescriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 		DF6668A7277339EB00B70EAB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF696C512776203C00ED70B6 /* Other */,
 				DF6668C1277342F100B70EAB /* Core Tabs */,
 				DF6668B427733C0200B70EAB /* Login */,
 				DF6668C22773432700B70EAB /* Posts */,
@@ -140,6 +152,7 @@
 				DF82DBB82774985000D78AEE /* GoogleService-Info.plist */,
 				DF6668912773342E00B70EAB /* AppDelegate.swift */,
 				DF6668932773342E00B70EAB /* SceneDelegate.swift */,
+				DF93BA1A27763B1C0024D769 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -170,6 +183,7 @@
 				DF6668952773342E00B70EAB /* HomeViewController.swift */,
 				DF6668AA27733AC000B70EAB /* ProfileViewController.swift */,
 				DF6668AC27733B4500B70EAB /* TabBarViewController.swift */,
+				DF696C542776246300ED70B6 /* Configuration.storekit */,
 			);
 			path = "Core Tabs";
 			sourceTree = "<group>";
@@ -181,6 +195,14 @@
 				DF6668B527733C3C00B70EAB /* ViewPostViewController.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		DF696C512776203C00ED70B6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DF696C522776205D00ED70B6 /* PayWallViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		F73C0093EDD41F262859922B /* Frameworks */ = {
@@ -307,10 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF02082D2774D16A00A17D0C /* BlogPost.swift in Sources */,
+				DF6DDB322777309800653809 /* PayWallDescriptionView.swift in Sources */,
+				DF93BA1B27763B1C0024D769 /* Extensions.swift in Sources */,
 				DF6668AF27733BA700B70EAB /* LoginViewController.swift in Sources */,
 				DF6668BA27733CF600B70EAB /* IAPManager.swift in Sources */,
 				DF6668C027733D4A00B70EAB /* StorageManager.swift in Sources */,
 				DF6668BE27733D3300B70EAB /* AuthManager.swift in Sources */,
+				DF93BA19277639CB0024D769 /* PayWallHeaderView.swift in Sources */,
 				DF6668962773342E00B70EAB /* HomeViewController.swift in Sources */,
 				DF6668B127733BB100B70EAB /* RegisterViewController.swift in Sources */,
 				DF02082B2774D15400A17D0C /* User.swift in Sources */,
@@ -321,6 +346,7 @@
 				DF6668AD27733B4500B70EAB /* TabBarViewController.swift in Sources */,
 				DF6668942773342E00B70EAB /* SceneDelegate.swift in Sources */,
 				DF6668B827733C5F00B70EAB /* CreateNewPostViewController.swift in Sources */,
+				DF696C532776205D00ED70B6 /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

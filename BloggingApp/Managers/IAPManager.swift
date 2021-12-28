@@ -10,13 +10,14 @@ import Purchases
 
 final class IAPManager{
     static let shared = IAPManager()
-    
+    //RevenueCat Shared secret
+    //secret from dev acc
     private init() {
         
     }
     
-    func isPremium() {
-        
+    func isPremium() -> Bool {
+        return false
     }
     
     func subscribe() {
