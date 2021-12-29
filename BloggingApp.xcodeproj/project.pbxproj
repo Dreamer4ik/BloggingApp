@@ -28,6 +28,7 @@
 		DF696C532776205D00ED70B6 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF696C522776205D00ED70B6 /* PayWallViewController.swift */; };
 		DF6DDB322777309800653809 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6DDB312777309800653809 /* PayWallDescriptionView.swift */; };
 		DF82DBB92774985000D78AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF82DBB82774985000D78AEE /* GoogleService-Info.plist */; };
+		DF87F0C8277C698D00880385 /* LoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87F0C7277C698D00880385 /* LoginHeaderView.swift */; };
 		DF93BA19277639CB0024D769 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93BA18277639CB0024D769 /* PayWallHeaderView.swift */; };
 		DF93BA1B27763B1C0024D769 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93BA1A27763B1C0024D769 /* Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		DF696C542776246300ED70B6 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		DF6DDB312777309800653809 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		DF82DBB82774985000D78AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF87F0C7277C698D00880385 /* LoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderView.swift; sourceTree = "<group>"; };
 		DF93BA18277639CB0024D769 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
 		DF93BA1A27763B1C0024D769 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				DF66689C2773342E00B70EAB /* LaunchScreen.storyboard */,
 				DF93BA18277639CB0024D769 /* PayWallHeaderView.swift */,
 				DF6DDB312777309800653809 /* PayWallDescriptionView.swift */,
+				DF87F0C7277C698D00880385 /* LoginHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF02082D2774D16A00A17D0C /* BlogPost.swift in Sources */,
+				DF87F0C8277C698D00880385 /* LoginHeaderView.swift in Sources */,
 				DF6DDB322777309800653809 /* PayWallDescriptionView.swift in Sources */,
 				DF93BA1B27763B1C0024D769 /* Extensions.swift in Sources */,
 				DF6668AF27733BA700B70EAB /* LoginViewController.swift in Sources */,
