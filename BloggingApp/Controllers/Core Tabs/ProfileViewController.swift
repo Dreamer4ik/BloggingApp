@@ -43,8 +43,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         addSubView()
         setUpTable()
         fetchProfileData()
+        fetchPosts()
         title = "Profile"
-//        title = currentEmail
     }
     private func addSubView() {
         view.addSubview(tableView)
@@ -178,7 +178,14 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     private var posts: [BlogPost] = []
     
     private func fetchPosts() {
-        
+        print("Fetching posts...")
+        DatabaseManager.shared.getPosts(for: currentEmail) { [weak self] posts in
+            self?.posts = posts
+            print("Found: \(posts.count)")
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
     
     // TableView
@@ -191,10 +198,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if #available(iOS 14.0, *) {
             var config = cell.defaultContentConfiguration()
-            config.text = "Blog post goes here!"
+            config.text = post.title
             cell.contentConfiguration = config
         } else {
-            cell.textLabel?.text = "Blog post goes here!"
+            cell.textLabel?.text = post.title
         }
         
         return cell

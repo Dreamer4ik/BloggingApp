@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewPostViewController: UIViewController {
+class ViewPostViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
