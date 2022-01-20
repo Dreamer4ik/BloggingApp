@@ -8,7 +8,7 @@
 import UIKit
 
 class CreateNewPostViewController: UITabBarController {
-
+    
     //Title field
     private let titleField: UITextField = {
         let field = UITextField()
@@ -55,7 +55,7 @@ class CreateNewPostViewController: UITabBarController {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
         picker.delegate = self
-//        picker.allowsEditing = true
+        //        picker.allowsEditing = true
         present(picker, animated: true)
     }
     
@@ -123,6 +123,9 @@ class CreateNewPostViewController: UITabBarController {
             StorageManager.shared.downloadUrlForPostHeader(email: email, postId: newPostId) { url in
                 guard let headerUrl = url else {
                     print("Failed to upload url for header")
+                    DispatchQueue.main.async {
+                        HapticsManager.shared.vibrate(for: .error)
+                    }
                     return
                 }
                 // Insert of post into database
@@ -135,9 +138,13 @@ class CreateNewPostViewController: UITabBarController {
                 DatabaseManager.shared.insert(blogPost: post, email: email) { [weak self] posted in
                     guard posted else {
                         print("Failed to post new Blog Article")
+                        DispatchQueue.main.async {
+                            HapticsManager.shared.vibrate(for: .error)
+                        }
                         return
                     }
                     DispatchQueue.main.async {
+                        HapticsManager.shared.vibrate(for: .success)
                         self?.didTapCancel()
                     }
                     
@@ -146,10 +153,10 @@ class CreateNewPostViewController: UITabBarController {
         }
         
         
-       
+        
     }
-
-
+    
+    
 }
 
 extension CreateNewPostViewController:  UIImagePickerControllerDelegate, UINavigationControllerDelegate {

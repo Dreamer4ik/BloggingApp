@@ -164,6 +164,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                     DispatchQueue.main.async {
                         UserDefaults.standard.set(nil, forKey: "email")
                         UserDefaults.standard.set(nil, forKey: "name")
+                        UserDefaults.standard.set(false, forKey: "premium")
                         let signInVc = LoginViewController()
                         signInVc.navigationItem.largeTitleDisplayMode = .always
                         let navVc = UINavigationController(rootViewController: signInVc)
@@ -209,6 +210,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        HapticsManager.shared.vibrateForSelection()
+        
         var isOwnedByCurrentUser = false
         if let email = UserDefaults.standard.string(forKey: "email"){
             isOwnedByCurrentUser = email == currentEmail

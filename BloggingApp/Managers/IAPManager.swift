@@ -11,8 +11,24 @@ import StoreKit
 
 final class IAPManager{
     static let shared = IAPManager()
+    static let formatter = ISO8601DateFormatter()
     
-    private var postEligibleViewDate: Date?
+    private var postEligibleViewDate: Date? {
+        get {
+            guard let string = UserDefaults.standard.string(forKey: "postEligibleViewDate") else {
+                return nil
+            }
+            return IAPManager.formatter.date(from: string)
+        }
+        
+        set {
+            guard let date = newValue else {
+                return
+            }
+            let string = IAPManager.formatter.string(from: date)
+            UserDefaults.standard.set(string, forKey: "postEligibleViewDate")
+        }
+    }
     
     //RevenueCat Shared secret
     //secret from dev acc

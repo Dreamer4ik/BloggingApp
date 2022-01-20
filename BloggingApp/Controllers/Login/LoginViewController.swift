@@ -97,10 +97,13 @@ class LoginViewController: UIViewController {
                   return
               }
         
+        HapticsManager.shared.vibrateForSelection()
         AuthManager.shared.signIn(email: email, password: password) { [weak self] success in
             guard success else {
                 return
             }
+            // Update subscription status for newly signed in user
+            IAPManager.shared.getSubscriptionStatuts(completion: nil)
             DispatchQueue.main.async {
                 UserDefaults.standard.set(email, forKey: "email")
                 let vc = TabBarViewController()
