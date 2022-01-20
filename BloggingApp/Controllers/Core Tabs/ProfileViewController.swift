@@ -82,7 +82,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         headerView.addSubview(profilePhoto)
         let tap = UITapGestureRecognizer(target: self, action: #selector(didTapProfilePhoto))
         profilePhoto.addGestureRecognizer(tap)
-
+        
         // Email
         let emailLabel = UILabel(frame: CGRect(x: 20, y: profilePhoto.bottom+10, width: view.width-40, height: 100))
         headerView.addSubview(emailLabel)
@@ -122,14 +122,14 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                   return
               }
         
-            let picker = UIImagePickerController()
-            picker.sourceType = .photoLibrary
-            picker.delegate = self
-            picker.allowsEditing = true
-            present(picker, animated: true)
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true)
         
         
-
+        
     }
     
     private func fetchProfileData() {
@@ -209,10 +209,31 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = ViewPostViewController(post: posts[indexPath.row])
-        vc.navigationItem.largeTitleDisplayMode = .never
-        vc.title = "Post"
-        navigationController?.pushViewController(vc, animated: true)
+        var isOwnedByCurrentUser = false
+        if let email = UserDefaults.standard.string(forKey: "email"){
+            isOwnedByCurrentUser = email == currentEmail
+        }
+        if !isOwnedByCurrentUser {
+            if IAPManager.shared.canViewPost {
+                let vc = ViewPostViewController(post: posts[indexPath.row], isOwnedByCurrentUser: isOwnedByCurrentUser)
+                vc.navigationItem.largeTitleDisplayMode = .never
+                vc.title = "Post"
+                navigationController?.pushViewController(vc, animated: true)
+            }
+            else {
+                let vc = PayWallViewController()
+                present(vc, animated: true)
+            }
+        }
+        else {
+            // Our post
+            let vc = ViewPostViewController(post: posts[indexPath.row], isOwnedByCurrentUser: isOwnedByCurrentUser)
+            vc.navigationItem.largeTitleDisplayMode = .never
+            vc.title = "Post"
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+      
     }
     
 }
